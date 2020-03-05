@@ -4,6 +4,7 @@ import {robots} from '../robots';
 import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll';
 import ErrorBoundry from '../components/ErrorBoundry';
+import './App.css';
 
 class App extends React.Component  {
     constructor() {
@@ -34,7 +35,7 @@ class App extends React.Component  {
         <h1>loading</h1> : (
             <Fragment>
                     <div className='tc'>
-                        <h1>robofriends</h1>
+                        <h1 className='f1'>robofriends</h1>
                         <SearchBox searchChange={this.onSearchChange}/>
                         <Scroll>
                             <ErrorBoundry>
